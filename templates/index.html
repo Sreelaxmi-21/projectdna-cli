@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ProjectDNA Web</title>
+
+<style>
+body {
+    margin:0;
+    font-family:"Segoe UI", Arial, sans-serif;
+    background:#fff0f6;   /* light pink background */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container {
+    background:#fff9fb;
+    padding:45px;
+    border-radius:22px;
+    width:650px;
+    text-align:center;
+    box-shadow:0 12px 28px rgba(240,150,180,0.18);
+    border:2px solid #f7c6d8;   /* soft pink outline */
+}
+
+.title {
+    font-size:36px;
+    font-weight:800;
+    margin-bottom:6px;
+    color:#3b2b35;
+}
+
+.tagline {
+    font-size:15px;
+    color:#7a6570;
+    margin-bottom:30px;
+}
+
+input {
+    padding:14px;
+    width:92%;
+    border-radius:14px;
+    border:1px solid #f2c7d8;
+    font-size:16px;
+    background:#fff5f8;
+    outline:none;
+}
+
+input:focus {
+    border-color:#9bb7ff;
+}
+
+/* BLUE BUTTONS */
+button {
+    padding:12px 24px;
+    margin:12px 8px;
+    border:none;
+    border-radius:14px;
+    background:#6b8cff;   /* soft blue */
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+button:hover {
+    background:#4e6ef2;   /* slightly darker blue hover */
+    transform:translateY(-2px);
+}
+
+.hint {
+    background:#fff1f6;
+    padding:14px;
+    margin-top:20px;
+    border-radius:14px;
+    font-size:14px;
+    color:#5c4b53;
+}
+
+pre {
+    background:#fff6fa;
+    padding:22px;
+    margin-top:15px;
+    border-radius:16px;
+    text-align:left;
+    white-space:pre-wrap;
+    font-size:14px;
+    border:1px solid #f4cddd;
+}
+</style>
+
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="title">Project DNA 🧬</div>
+<div class="tagline">AI-powered Project Analyzer & Reality Checker</div>
+
+<form method="POST">
+<input type="text" name="idea" placeholder="Enter your project idea...">
+<br>
+<button name="action" value="analyze">Analyze</button>
+<button name="action" value="reality">Reality Check</button>
+</form>
+
+{% if output %}
+<div class="hint">
+👉 Copy the text below and paste it into <b>GitHub Copilot CLI</b> to get AI analysis.
+</div>
+
+<pre>{{ output }}</pre>
+{% endif %}
+
+</div>
+
+</body>
+</html>
