@@ -11,10 +11,15 @@ Instead of generating AI responses directly, ProjectDNA builds structured prompt
 ## ✨ Features
 
 ⭐ Analyze any software project idea
+
 ⭐ Reality Check evaluation
+
 ⭐ Soft aesthetic Web UI
+
 ⭐ CLI + Web workflow
+
 ⭐ GitHub Copilot CLI integration
+
 ⭐ Beginner-friendly design
 
 ---
@@ -22,10 +27,15 @@ Instead of generating AI responses directly, ProjectDNA builds structured prompt
 ## 🛠 Technologies Used
 
 ✅ Python
+
 ✅ Flask
+
 ✅ HTML & CSS
+
 ✅ GitHub Copilot CLI
+
 ✅ Typer (CLI framework)
+
 ✅ Rich (terminal styling)
 
 ---
